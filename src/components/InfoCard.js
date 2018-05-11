@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const InfoCardWrapper = styled.div`
   width: 30%;
+  margin: 0 10px;
   height: 330px;
   text-align: center;
   background-color: white;
@@ -14,9 +15,13 @@ const InfoCardWrapper = styled.div`
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: .3;
+    opacity: 0.3;
   }
- `
+  @media (max-width: 860px) {
+    margin: 10px 0; 
+    width: 80%;
+  }
+`
 
  const InfoCardContent = styled.div`
    z-index: 2;
